@@ -1,0 +1,8 @@
+[
+  {"id": 1, "email": "owner@bluewave-dental.example", "first_name": "Priya", "company": "Bluewave Dental", "category": "dentist", "city": "Harbor City", "status": "new", "step": 0, "history": []},
+  {"id": 2, "email": "mo@northside-legal.example", "first_name": "Mo", "company": "Northside Legal", "category": "lawyer", "city": "Harbor City", "status": "new", "step": 0, "history": []},
+  {"id": 3, "email": "info@sunrise-salon.example", "first_name": "", "company": "Sunrise Salon", "category": "salon", "city": "Harbor City", "status": "active", "step": 1,
+   "last_sent_at": "2026-10-05T14:00:00Z",
+   "history": [{"dir": "out", "at": "2026-10-05T14:00:00Z", "subject": "Books for Sunrise Salon", "body": "Hi, I do monthly bookkeeping for small shops in Harbor City, usually in QuickBooks Online. If your books ever fall behind, I can catch them up and keep them current. Would it help to talk for ten minutes this week? Jordan"}]},
+  {"id": 4, "email": "hello@oldtown-garage.example", "first_name": "Sam", "company": "Old Town Garage", "category": "autorepair", "city": "Harbor City", "status": "unsubscribed", "step": 1, "history": []}
+]

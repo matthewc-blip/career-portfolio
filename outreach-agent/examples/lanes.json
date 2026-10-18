@@ -1,0 +1,39 @@
+{
+  "default": "web",
+  "lanes": {
+    "bookkeeping": {
+      "label": "Bookkeeping",
+      "categories": ["contractor", "restaurant", "salon", "dentist", "doctor", "nonprofit", "autorepair"],
+      "first": "Offer monthly bookkeeping and catch-up cleanups. FIRST decide whether this business is worth an optional advisory mention (part-time finance leadership: budgeting, cash flow planning, reporting) and put the decision in \"pitch_advisory\" (true or false) with one plain sentence in \"advisory_reason\" naming the specific fact behind it. Say true only when the facts show a business big or complex enough. If false, do not mention advisory work at all.",
+      "later": "Offer bookkeeping with a new angle. Decide again whether an advisory mention is worth it (set \"pitch_advisory\" and \"advisory_reason\" the same way). If false, do not mention advisory work. Never mention web design or SEO.",
+      "must": ["bookkeep"],
+      "ban": "\\bseo\\b|web design|our websites?|build\\w* (you |your )?(a )?websites?",
+      "ban_say": "Offer only bookkeeping (and advisory work when pitch_advisory is true). Remove any mention of websites or SEO.",
+      "advisory": {"pattern": "advisory|part.time (cfo|finance)|fractional", "ask": "part-time finance help (budgeting, cash flow planning, reporting).", "label": "Bookkeeping and advisory"},
+      "angles": {
+        "catch_up_cleanup": "catching up on behind or messy books",
+        "monthly_books": "steady monthly bookkeeping done for them",
+        "tax_ready": "books ready for the accountant or tax time",
+        "cash_flow": "seeing where the money goes and cash flow clarity",
+        "owner_time": "getting the owner's evenings and weekends back",
+        "other": "none of the above"
+      }
+    },
+    "web": {
+      "label": "Website refresh",
+      "categories": ["lawyer", "realestate", "title", "insurance", "accountant", "retail", "gym"],
+      "first": "Offer a fast, clear website refresh with the basics of local search set up properly (Google Business Profile, page titles). Lead with one concrete, true observation about their web presence if the website was read; otherwise use only the listing facts. Offer nothing else.",
+      "later": "Stay with the website refresh as the lead. Use one new, true angle (a different situation where a clearer site helps them, or a concrete next step). Offer nothing else.",
+      "must": ["website|web site|\\bsite\\b", "local search|google|found online|search"],
+      "ban": "bookkeep|payroll|\\bcfo\\b|guarantee|first page|rank(ed|ing)? (#|number )?1",
+      "ban_say": "Offer only the website refresh. Remove any mention of bookkeeping or payroll, and never promise rankings.",
+      "angles": {
+        "slow_or_dated": "a site that looks dated or loads slowly",
+        "not_found": "customers who cannot find them on Google or Maps",
+        "mobile_first": "visitors who browse on a phone",
+        "clear_next_step": "a clearer way for visitors to call or book",
+        "other": "none of the above"
+      }
+    }
+  }
+}

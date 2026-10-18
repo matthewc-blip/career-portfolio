@@ -1,0 +1,11 @@
+{
+  "name": "free-seo-resume-tools",
+  "version": "1.0.0",
+  "description": "Free, dependency-free SEO page checker, Google spam-policy and link audit, email spam grader, resume + ATS keyword checker, and ghost-job detector. Rules only, no AI, nothing stored.",
+  "main": "lib/index.js",
+  "bin": { "free-tools": "bin/cli.js" },
+  "scripts": { "test": "node --test test/*.test.js" },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "author": "Matthew Coleman"
+}
